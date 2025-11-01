@@ -74,6 +74,7 @@ init My_New_Repo
 ### Changing Repository: `change-repo`
 
 Switches to another existing repository. The repository must have been previously created using the `init` command.
+If we are already in the repository that we are changing to, no change occurs.
 
 **Format:**
 ```
@@ -91,7 +92,17 @@ change-repo My_New_Repo
 
 **Expected Output:**
 ```
- Successfully changed to repository: /My_New_Repo
+Successfully changed to repository: /My_New_Repo
+```
+
+**Example (already in repository):**
+```
+change-repo main
+```
+
+**Expected Output:**
+```
+Already on main!
 ```
 
 ---
